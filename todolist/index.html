@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1 class="dark:bg-gray-900 text-white text-xl text-center p-3">To-Do List 🗒️</h1>
+    <div class="dark:bg-gray-800 text-white p-5 min-h-screen flex flex-col gap-1">
+        <label for="inputbox" class="p-2 text-white text-sm mx-auto md:text-xl font-semibold font-mono">What Do You Have To Do?</label>
+        <input type="text" id="todo-input" placeholder="Enter your task 📝" class="dark:bg-gray-900 text-white mx-2 py-4 font-sans border">
+        <button id="add-button" class="bg-white hover:bg-gray-900 hover:text-white focus:outline-none focus:shadow-outline text-gray-800 font-semibold w-fit py-1 px-4 mx-auto my-2 border border-gray-400 rounded shadow transition delay-050 duration-250 ease-in-out hover:-translate-y-1 hover:scale-110">Add Task</button>
+        <ul id="todo-list" class="border border-3 p-4 my-3"></ul>
+        <div class="dark:bg-gray-800 flex flex-col mx-auto sm:flex-row sm:gap-4 my-2 p-4">
+            <label for="searchbox" class="text-sm text-white md:text-xl font-semibold font-mono py-2">Search up your tasks here</label>
+            <input id="search-input" placeholder="Lookup tasks 🔎" class="p-1 dark:bg-gray-900 text-white border border-3">
+        </div>
+    </div>
+    <footer class="dark:bg-gray-900 text-white p-4">Created by Telly</footer>
+    <script src="script.js"></script>
+</body>
+</html>
