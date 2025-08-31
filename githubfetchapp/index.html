@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Fetch Profile App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<main class="h-fit pt-16">
+    <nav class="bg-gray-900 text-white text-center p-4 fixed top-0 w-full font-mono z-50">
+        <h1 class="md:text-xl font-bold">Fetch GitHub Profile Info Below</h1>
+        <span class="font-extralight text-xs md:text-base">Curious to find out about someone's GitHub profile?</span>
+    </nav>
+    <div class="bg-blue-900 min-h-screen flex flex-col justify-evenly items-center gap-4 pb-5 md:pt-5 mt-4">
+        <div class="flex flex-col items-center">
+            <input type="text" id="input-fetch" placeholder="Type in their GitHub username here 🔎" class="bg-white rounded w-sm max-w-md p-2 my-3">
+            <span class="font-extralight text-xs text-white">Press Enter To Search</span>
+        </div>
+        <div id="display" class="flex flex-col text-white gap-5 w-xs md:w-fit md:max-w-xl">
+            <div id="heading-title" class="bg-gray-900 outline-2 outline-offset-2 rounded-lg p-5 shadow-xl">
+                <h1 class="font-mono">GitHub Profile:</h1>
+            </div>
+            <div class="bg-gray-900 p-5 rounded-lg outline-2 oultine-offset-2 overflow-hidden shadow-xl">
+                <img id="avatar" class="rounded shadow-lg max-h-80 outline-2 oultine-offset-2 hover:scale-105 transition duration-250 delay-050 overflow-hidden">
+            </div>
+            <div class="bg-gray-900 outline-2 oultine-offset-2 p-5 rounded-lg shadow-xl">
+                <h2 id="name" class="text-xl font-bold font-mono"></h2>
+                <p id="bio"></p>
+            </div>
+            <div id="stats" class="flex flex-col bg-gray-900 p-3 rounded-lg outline-2 outline-offset-2 gap-2"> 
+                <span id="repos"></span>
+                <span id="followers"></span>
+                <span id="following"></span>
+                <div id="fullinfo-section" class="flex flex-col mt-3 items-center">
+                    <button id="fullinfo-btn" class="bg-gray-900 p-2 w-64 outline-2 outline-white rounded-lg shadow-lg hover:-translate-y-1 hover:scale-105 transition ease-in-out duration-250 delay-050 hover:text-black hover:bg-white hover:outline hover:outline-offset-4 hover:outline-blue-300">Want To Find Out More? 🔎</button>
+                    <span id="fullinfo-desc" class="font-extralight text-xs my-3 p-1">User's information will be parsed in JSON format.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-900 text-white p-4 pt-4">Created By Telly&reg;</footer>
+
+    <script src="script.js"></script>
+</main>
+</html>
