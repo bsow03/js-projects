@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-zinc-400">
+    <div id="heading">
+        <h1 class="place-self-center p-3 font-bold font-mono text-3xl">Calculator</h1>
+    </div>
+    <div id="calculator" class="bg-zinc-800 flex flex-col m-2 p-2 rounded-xl shadow-xl h-md max-w-fit place-self-center">
+        <input type="text" id="display" class="p-3 m-3 bg-black text-white" disabled>
+        <div class="grid grid-cols-4 grid-rows-5 gap-2 p-3">
+                <button id="clear-btn" class="bg-gray-500 text-white p-2 hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">
+                    <span class="btn-label">AC</span>
+                    <span class="btn-icon text-white max-w-sm max-h-sm"></span> 
+                    
+                </button>
+                <button class="bg-gray-500 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">+/-</button>
+                <button class="bg-gray-500 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">%</button>
+                <button class="bg-orange-400 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">÷</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">7</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">8</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">9</button>
+                <button class="bg-orange-400 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">×</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">4</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">5</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">6</button>
+                <button class="bg-orange-400 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">-</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">1</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">2</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">3</button>
+                <button class="bg-orange-400 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">+</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">🔄</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">0</button>
+                <button class="bg-zinc-600 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">.</button>
+                <button class="bg-orange-400 text-white hover:bg-zinc-500 active:bg-zinc-400 transition-colors duration-200">=</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
